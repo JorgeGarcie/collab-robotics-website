@@ -2,48 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collab Robotics Group Project</title>
   <style>
     /* Global styles */
     body {
-      background-color: #000;
-      color: #00FF00;
-      font-family: 'Courier New', Courier, monospace;
+      background-color: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
     a {
-      color: #00FF00;
+      color: #000;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    /* Container for content */
+    /* Container */
     .container {
-      max-width: 1000px;
-      margin: auto;
+      max-width: 900px;
+      margin: 0 auto;
       padding: 20px;
     }
-    /* Header styling */
+    /* Header */
     header {
-      background: #111;
+      background-color: #f8f8f8;
       padding: 20px;
-      border-bottom: 2px solid #00FF00;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
     }
     header h1 {
       margin: 0;
       font-size: 2.5em;
     }
     header p {
-      margin: 5px 0 0;
+      margin: 10px 0 0;
       font-size: 1.2em;
     }
-    /* Navigation menu */
+    /* Navigation */
     nav {
-      background: #222;
+      background-color: #eaeaea;
       padding: 10px;
       text-align: center;
     }
@@ -51,35 +52,35 @@
       margin: 0 15px;
       font-weight: bold;
     }
-    /* Section styling */
+    /* Sections */
     section {
       padding: 20px 0;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #ddd;
     }
     section h2 {
       margin-top: 0;
       font-size: 2em;
     }
     section h3 {
-      margin-bottom: 5px;
       font-size: 1.5em;
+      margin-bottom: 10px;
     }
-    /* Placeholder styling */
     .placeholder {
+      color: #888;
       font-style: italic;
-      color: #555;
     }
-    /* Footer styling */
+    /* Footer */
     footer {
-      background: #111;
+      background-color: #f8f8f8;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       font-size: 0.9em;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <!-- Header with project title and team -->
+  <!-- Header with project title and team info -->
   <header>
     <div class="container">
       <h1>Collab Robotics Group Project</h1>
@@ -101,7 +102,7 @@
     <section id="project-goal">
       <h2>Project Goal</h2>
       <p>
-        Integrate a state machine for logic, process audio to detect commands, recognize visual inputs, perform pose estimation, and plan navigation for object retrieval.
+        Our goal is to integrate a state machine for logic, process audio commands, recognize visual inputs, perform pose estimation, and plan navigation for object retrieval.
       </p>
     </section>
     
@@ -135,10 +136,10 @@
     <section id="methods">
       <h2>Methods</h2>
       <ul>
-        <li><strong>State Machine:</strong> Manages eight logic states.</li>
-        <li><strong>Language:</strong> Records and processes audio to determine commands.</li>
+        <li><strong>State Machine:</strong> Handles eight logic states.</li>
+        <li><strong>Language:</strong> Records and processes audio to generate commands.</li>
         <li><strong>Perception:</strong> Recognizes visual inputs for object identification.</li>
-        <li><strong>Pose Estimation:</strong> Transforms and commands poses.</li>
+        <li><strong>Pose Estimation:</strong> Performs transformations and pose commands.</li>
         <li><strong>Navigation:</strong> Plans motion and retrieves objects using path planning.</li>
       </ul>
     </section>
