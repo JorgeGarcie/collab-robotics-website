@@ -2,50 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Collab Robotics Group Project</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global styles */
+    body {
+      background-color: #000;
+      color: #00FF00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #00FF00;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Container for content */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    /* Header styling */
+    header {
+      background: #111;
+      padding: 20px;
+      border-bottom: 2px solid #00FF00;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    /* Navigation menu */
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    /* Section styling */
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid #333;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+    section h3 {
+      margin-bottom: 5px;
+      font-size: 1.5em;
+    }
+    /* Placeholder styling */
+    .placeholder {
+      font-style: italic;
+      color: #555;
+    }
+    /* Footer styling */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header with project title and team -->
   <header>
-    <h1>Collab Robotics Group Project</h1>
-    <p>Team Members: Jorge Garcia, Ariel Bachman, Jerry Qu, Raúl Molina, Jermaine Zhao</p>
+    <div class="container">
+      <h1>Collab Robotics Group Project</h1>
+      <p>Team: Jorge Garcia, Ariel Bachman, Jerry Qu, Raúl Molina, Jermaine Zhao</p>
+    </div>
   </header>
-  <section id="project-goal">
-    <h2>Project Goal</h2>
-    <p>Our project involves integrating a state machine for logic, language processing for audio, perception for visual inputs, pose estimation, and navigation for object retrieval.</p>
-  </section>
-  <section id="tasks">
-    <h2>Tasks</h2>
-    <div>
-      <h3>Task 1: Retrieve Fruit</h3>
-      <p>Navigate to the object, pick it up, and return to the starting position.</p>
-      <!-- IMAGE/VIDEO placeholder -->
-      <p><em>IMAGE/VIDEO GOES HERE</em></p>
-    </div>
-    <div>
-      <h3>Task 2: Pick Fruit and Place in Basket</h3>
-      <p>Pick up the apple and put it in the basket.</p>
-      <p><em>IMAGE/VIDEO GOES HERE</em></p>
-    </div>
-    <div>
-      <h3>Task 3: Detect Pointing and Pick Up Fruit</h3>
-      <p>The robot detects human pointing, identifies the fruit, and picks it up.</p>
-      <p><em>IMAGE/VIDEO GOES HERE</em></p>
-    </div>
-  </section>
-  <section id="methods">
-    <h2>Methods</h2>
-    <ul>
-      <li><strong>State Machine:</strong> Handles logic with eight states.</li>
-      <li><strong>Language:</strong> Processes audio and publishes detected fruit and actions.</li>
-      <li><strong>Perception:</strong> Recognizes visual inputs.</li>
-      <li><strong>Pose Estimation:</strong> Manages transformations and pose commands.</li>
-      <li><strong>Navigation:</strong> Plans motion and retrieves objects.</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Q&A</p>
-  </footer>
-</body>
-</html>
+  
+  <!-- Navigation menu -->
+  <nav>
+    <a href="#project-goal">Project Goal</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#methods">Methods</a>
+    <a href="#qa">Q&A</a>
+  </nav>
+  
+  <!-- Main content container -->
+  <div class="container">
+    <!-- Project Goal Section -->
+    <section id="project-goal">
+      <h2>Project Goal</h2>
+      <p>
+        Integrate a state machine for logic, process audio to detect commands, recognize visual inputs, perform pose estimation, and plan navigation for object retrieval.
+      </p>
+    </section>
+    
+    <!-- Tasks Section -->
+    <section id="tasks">
+      <h2>Tasks</h2>
+      <div>
+        <h3>Task 1: Retrieve Fruit and Go Back</h3>
+        <p>
+          The robot
