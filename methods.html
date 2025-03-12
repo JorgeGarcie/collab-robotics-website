@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collab Robotics Group Project - Methods</title>
   <style>
-    /* (Same CSS as index.html) */
+    /* Global styles */
     body {
       background-color: #fff;
       color: #000;
@@ -47,6 +47,9 @@
       padding: 10px;
       margin-top: 20px;
     }
+    h2 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -55,6 +58,7 @@
       <h1>Collab Robotics Group Project</h1>
       <nav>
         <a href="index.html">Home</a>
+        <a href="project-goal.html">Project Goal</a>
         <a href="methods.html">Methods</a>
         <a href="results.html">Results</a>
         <a href="future.html">Future Steps</a>
@@ -65,8 +69,27 @@
   
   <div class="container">
     <h2>Methods</h2>
-    <p>This page will detail the methods used in our project. You can include sections on the state machine logic, audio processing, visual perception, pose estimation, and navigation strategies.</p>
-    <!-- Add more detailed content as needed -->
+    <p>
+      In our project, we use <strong>ROS2</strong> as our middleware, enabling communication between the different components of our robotics system. 
+      ROS2 facilitates robust message exchange across our nodes, which form the backbone of our client-server architecture.
+    </p>
+    <p>
+      Our architecture consists of dedicated server and client nodes. The <strong>server node</strong> manages tasks, handles logic, and coordinates actions, while the <strong>client node</strong> sends
+      commands and processes responses. This separation of concerns not only enhances modularity but also ensures efficient real-time performance.
+    </p>
+    <p>
+      The core modules of our system include:
+    </p>
+    <ul>
+      <li><strong>State Machine:</strong> Manages the logical flow with eight defined states to control the robot’s behavior.</li>
+      <li><strong>Language:</strong> Processes audio inputs using advanced speech-to-text algorithms, translating voice commands into actionable tasks.</li>
+      <li><strong>Perception:</strong> Utilizes computer vision techniques to recognize and interpret visual data, enabling object detection and environment mapping.</li>
+      <li><strong>Pose Estimation:</strong> Employs transformation algorithms and sensor data to determine the robot’s position and orientation, guiding precise movements.</li>
+      <li><strong>Navigation:</strong> Implements motion planning algorithms for safe and efficient pathfinding, facilitating object retrieval and obstacle avoidance.</li>
+    </ul>
+    <p>
+      This modular approach, powered by ROS2, allows our system to be scalable and flexible, making it easier to incorporate future enhancements and adapt to diverse application scenarios.
+    </p>
   </div>
   
   <footer>
