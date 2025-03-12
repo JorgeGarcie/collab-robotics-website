@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collab Robotics Group Project - Team</title>
   <style>
-    /* Same CSS styling */
+    /* Global styling */
     body {
       background-color: #fff;
       color: #000;
@@ -40,6 +40,19 @@
       margin: 0 auto;
       padding: 20px;
     }
+    .team-heading {
+      text-align: center;
+    }
+    .team-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+    .repo-link {
+      text-align: center;
+      margin-top: 20px;
+    }
     footer {
       background-color: #f8f8f8;
       border-top: 1px solid #ddd;
@@ -64,8 +77,12 @@
   </header>
   
   <div class="container">
-    <h2>Team</h2>
-    <p>Introduce the team members along with their roles. For example:</p>
+    <h2 class="team-heading">Team</h2>
+    <!-- Team picture for Jorge -->
+    <img src="images/jorge.jpg" alt="Jorge Garcia" class="team-image">
+    <p style="text-align: center;">Jorge Garcia</p>
+    
+    <!-- List of team members -->
     <ul>
       <li>Jorge Garcia</li>
       <li>Ariel Bachman</li>
@@ -73,7 +90,11 @@
       <li>Raúl Molina</li>
       <li>Jermaine Zhao</li>
     </ul>
-    <!-- Add any bios, images, or contact info if desired -->
+    
+    <!-- Repository link -->
+    <div class="repo-link">
+      <a href="https://github.com/yourusername/yourrepo" target="_blank">Visit our GitHub Repository</a>
+    </div>
   </div>
   
   <footer>
