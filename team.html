@@ -42,12 +42,20 @@
     }
     .team-heading {
       text-align: center;
+      margin-bottom: 40px;
     }
+    /* Team images container */
+    .team-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    /* Individual team image styling */
     .team-image {
-      display: block;
-      margin: 20px auto;
       max-width: 200px;
-      border-radius: 50%;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .repo-link {
       text-align: center;
@@ -78,22 +86,20 @@
   
   <div class="container">
     <h2 class="team-heading">Team</h2>
-    <!-- Team picture for Jorge -->
-    <img src="images/Jorge.jpg" alt="Jorge Garcia" class="team-image">
-    <p style="text-align: center;">Jorge Garcia</p>
     
-    <!-- List of team members -->
-    <ul>
-      <li>Jorge Garcia</li>
-      <li>Ariel Bachman</li>
-      <li>Jerry Qu</li>
-      <li>Raúl Molina</li>
-      <li>Jermaine Zhao</li>
-    </ul>
+    <!-- Team Images Section -->
+    <div class="team-images">
+      <!-- Replace these filenames with your actual images -->
+      <img src="images/Jorge.jpg" alt="Team Member 1" class="team-image">
+      <img src="images/Ariel.jpg" alt="Team Member 2" class="team-image">
+      <img src="images/Jerry.jpg" alt="Team Member 3" class="team-image">
+      <img src="images/Raul.jpg" alt="Team Member 4" class="team-image">
+      <img src="images/Jermaine.jpg" alt="Team Member 5" class="team-image">
+    </div>
     
-    <!-- Repository link -->
+    <!-- Repository link (optional) -->
     <div class="repo-link">
-      <a href="https://github.com/JorgeGarcie/collabrobotics" target="_blank">Visit our GitHub Repository</a>
+      <a href="https://github.com/yourusername/yourrepo" target="_blank">Visit our GitHub Repository</a>
     </div>
   </div>
   
